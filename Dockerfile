@@ -14,6 +14,8 @@ RUN chmod 755 /opt/start.sh && mkdir /opt/sincedb \
    && chown -R logstash.logstash /opt/sincedb/
 
 VOLUME /opt/log/
+VOLUME /opt/sincedb/
+
 USER logstash
 
 CMD /opt/start.sh
